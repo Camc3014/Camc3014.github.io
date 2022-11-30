@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Green Roofs NYC</title>
+        <!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+        <link rel ="stylesheet" href="lib/dist/MarkerCluster.css">
+        <link rel ="stylesheet" href="lib/dist/MarkerCluster.Default.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+        <script src="https://d3js.org/d3.v2.min.js?2.8.1"></script> 
+        <header>
+            <img src="img/greenroofbanner.png" alt = "Title Banner"
+                width= 1410px
+                height = 70px >
+                <button onclick="update('var1')">Variable 1
+                </button>
+                <button onclick="update('var2')">Variable 2</button>
+                <button onclick="update('var3')">Variable 3</button>
+                <button onclick="update('var4')">Variable 4</button>
+        </header>
+        <div id="map" class="map" ></div>
+        <div id="barChart"></div>
+        <div id="matrix"> </div>
+        <div id="background"></div>
+        
+        <script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+        <!-- <script type="text/javascript" src="lib/dist/leaflet.markercluster-src.js.map"></script>
+        <script type="text/javascript" src="lib/dist/leaflet.markercluster-src.js"></script> -->
+        <script type="text/javascript" src="lib/dist/leaflet.markercluster.js"></script>
+        <!-- <script type="text/javascript" src="lib/dist/leaflet.markercluster.js.map"></script> -->
+        <!-- <script type="text/javascript" src="lib/dist/leaflet.markercluster.js" -->
+            <!-- Load d3.js -->
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <!-- Add 2 buttons -->
+        <script type="text/javascript" src="js/barChart.js"></script>
+        <script type="text/javascript" src="data/mygeojson.js"></script>
+        <script type="text/javascript" src="data/greenroofsFinal.js"></script>
+        <script type="text/javascript" src="data/nyc.js"></script>
+        <script type="text/javascript" src="js/map.js"></script>
+        <!-- <script type="text/javascript" src="js/barChart.js"></script> -->
+        <script type="text/javascript" src="js/matrix.js" ></script>
+        <script>
+            
+            Matrix({
+                container: "#matrix",
+                start_color: "#74c476",
+                end_color: "#006d2c",
+            });
+            </script>
+    </body>
+        
+</html> 
